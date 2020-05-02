@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>HTML/SVG-Beispiel</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+*{
+  /* 
+  border: 0px;
+  margin-bottom: -4px;
+  margin-right: -4px;
+  margin-left: 0px;
+  padding: 0px;
+  */
+  stroke-width: 2em;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Die Fechtbahn </h2>
+<ul>
+<li>Länge 7m + 7m = 14m</li>
+<li>Breite: 1.5m bis 2m.</li>
+<li>Material elektrisch leitend. Um Bodentreffer speziell beim Degen nicht als gültige Treffer anzuzeigen.</li>
+</ul>
+
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+</svg>
+
+<h2>Die Mittellinie </h2>
+
+<ul>
+<li>Da trifft man sich für den Shake Hand nach dem Gefecht.</li>
+<li>Beide haben die gleichen Platz. (7m)</li>
+</ul>
+  
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 8000 0 L 8000 3000 Z" style="stroke: blue; stroke-dasharray:300 150 150 300; fill:none; "/> /* Mittellinie */
+</svg>
+
+<h2>Die Startlinien </h2>
+<ul>
+<li>2m von der Mittellinie entfernt.</li>
+<li>Dort stellt man sich auf zum Fechtergruß. Vor und nach dem Gefecht.</li>
+<li>Dort wartet man in korrekter Fechtstellung auf: Stellung,fertig los.(Französisch: En garde – prêt? – allez!)</li>
+</ul>
+
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 6000 500 L 6000 2500 Z" style="stroke: red;"/> /* Startlinien */
+  <path d="M 10000 500 L 10000 2500 Z" style="stroke: green;"/> 
+</svg>
+
+  
+<h2>Die Endlinien</h2>
+<ul>
+<li>Wenn man diese vollständig mit beiden Füßen überschreitet bekommt man einen Straftreffer.</li>
+</ul>
+
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 0 L 1000 3000 Z" style="stroke: red;"/> /* Endlinien */
+  <path d="M 15000 0 L 15000 3000 Z" style="stroke: green;"/> 
+</svg>
+
+<h2>Die Seitenlinien</h2>
+<ul>
+
+<li>Breite der Bahn 1,5 bis 2m.</li>
+<li>Wenn man diese mit den Füßen überschreitet bekommt man eine Strafe,</li>
+<li>Ein Fuß dann wird Halt gerufen und man wird 1m zurück gesetzt.</li>
+<li>Beide Füße dann bekommt man den Treffer den man gesetzt nicht. Natürlich wird auch dann Halt gerufen und man muss 1m zurück.</li>
+</ul>
+  
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+  
+  <path d="M 0 500 L 16000 500 Z" style="stroke: blue;"/> /* Seitenlinien */
+  <path d="M 0 2500 L 16000 2500 Z" style="stroke: blue; fill:none;"/> 
+</svg>  
+
+<h2>Die komplette Bahn</h2>  
+<p>
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+
+  <path d="M 0 500 L 16000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 0 2500 L 16000 2500 Z" style="stroke: grey; fill:none;"/> 
+
+  <path d="M 8000 0 L 8000 3000 Z" style="stroke: blue; stroke-dasharray:300 150 150 300; fill:none; "/> /* Mittellinie */
+
+  <path d="M 6000 500 L 6000 2500 Z" style="stroke: red;"/> /* Startlinien */
+  <path d="M 10000 500 L 10000 2500 Z" style="stroke: green;"/> 
+
+  <path d="M 1000 0 L 1000 3000 Z" style="stroke: red;"/> /* Endlinien */
+  <path d="M 15000 0 L 15000 3000 Z" style="stroke: green;"/> 
+</svg>
+
+</body>
+</html>
