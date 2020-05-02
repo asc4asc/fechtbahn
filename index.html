@@ -116,6 +116,29 @@
   <path d="M 13000 500 L 15000 500 15000 2500 13000 2500 Z" style="stroke:red; fill:url(#bwsquare50px);"/>
 </svg>  
   
+<h2>Auslaufzonen</h2>  
+<ul>
+<li>Hinter der Bahn sollte noch etwas Platz sein damit man z.B. nach einem Flash auslaufen kann.</li>
+</ul>
+
+<svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
+  <defs>
+   <pattern id="bwsquare50px" width="500" height="500" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="250" height="250" stroke="none" fill="red"/>
+      <rect x="250" y="0" width="250" height="250" stroke="none" fill="none"/>
+      <rect x="0" y="250" width="250" height="250" stroke="none" fill="none"/>
+      <rect x="250" y="250" width="250" height="250" stroke="none" fill="red"/>
+   </pattern>
+  </defs>
+  <path d="M 1000 500 L 15000 500 Z" style="stroke: grey;"/> /* Seitenlinien */
+  <path d="M 1000 2500 L 15000 2500 Z" style="stroke: grey;"/> 
+  <path d="M 1000 500 L 1000 2500 Z" style="stroke: grey;"/> /* Endlinien */
+  <path d="M 15000 500 L 15000 2500 Z" style="stroke: grey;"/> 
+
+  <path d="M 0 500 L 1000 500 1000 2500 0 2500 Z" style="stroke:green; fill:url(#bwsquare50px);"/> /* Auslaufzone */
+  <path d="M 17000 500 L 18000 500 18000 2500 17000 2500 Z" style="stroke:green; fill:url(#bwsquare50px);"/>
+</svg>    
+  
 <h2>Die komplette Bahn</h2>  
 <p>
 <svg x="0px" y="0px" width="90%" height="auto" viewBox="0 0 16000 3000">
